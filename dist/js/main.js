@@ -8,6 +8,9 @@ const navItem = document.querySelectorAll('.nav-item');
 
 // Set Initial Stae Of Menu
 let showMenu = false;
+
+menuBtn.addEventListener('click', toggleMenu);
+
 function toggleMenu() {
     if(!showMenu){
         menuBtn.classList.add('close');
@@ -25,6 +28,3 @@ function toggleMenu() {
         showMenu = false;
     }
 }
-
-
-menuBtn.addEventListener('click', toggleMenu);
