@@ -5,7 +5,7 @@ $home-image: url(../img/bg.jpg);
 $background-opacity: 0.9;
 
 @mixin ease-in-0ut {
-    transition: all 0.6s ease-out;
+    transition: all 0.7s ease-out;
 }
 
 @mixin background {
@@ -44,7 +44,7 @@ $background-opacity: 0.9;
 
 
 @mixin mediaSm {
-    @media screen  and (max-width: 500px){
+    @media screen  and (max-width: 400px){
         @content;
     }
 }
@@ -59,7 +59,7 @@ $background-opacity: 0.9;
 
 
 @mixin mediaLg {
-    @media screen and (min-width: 769px) and (max-width: 1170px)
+    @media screen and (min-width: 320px) and (max-width: 1170px)
     {
         @content;
     }
