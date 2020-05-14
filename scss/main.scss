@@ -18,6 +18,8 @@ body{
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
+    background-size: cover;
+    overflow: scroll;
 }
 
 
@@ -25,9 +27,13 @@ body{
 h1,h2,h3{
     margin: 0;
     font-weight: 400;
-    
+     
+    &.name{
+        word-wrap: break;
+    }
     &.lg-heading{
         font-size: 4rem;
+
     } 
     &.sm-heading{
         margin-left: -10px;
@@ -208,6 +214,12 @@ main{
 }
 .centering{
    text-align: left;
+}
+
+.osahon{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
 }
 
 @import 'mobile';

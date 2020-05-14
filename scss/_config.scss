@@ -12,9 +12,14 @@ $background-opacity: 0.9;
     @if $show-home-image {
         &#bg-img{
             background: $home-image;
-            background-attachment: fixed;
             background-size: cover;
-            background-position: center center;
+            background-position: center;
+            background-repeat:no-repeat;
+            background-position:center; 
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            -ms-content-zooming: none;
         
             &::after{
                 content: " ";
