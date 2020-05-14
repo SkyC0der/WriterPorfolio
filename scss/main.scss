@@ -27,14 +27,16 @@ h1,h2,h3{
     font-weight: 400;
     
     &.lg-heading{
-        font-size: 4rem;;
+        font-size: 4rem;
     } 
     &.sm-heading{
         margin-left: -10px;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         padding: 0.2rem 1rem;
     }
+  
 }
+
 
 a {
     color: #ffffff;
@@ -52,7 +54,7 @@ header{
 }
 
 main{
-    padding: 4rem;
+    padding: 3rem;
     min-height: calc(100vh - 50px);
 
     .icons{
@@ -94,7 +96,9 @@ main{
 
 .bio{
     grid-area: bio;
-    font-size: 3.5rem;;
+}
+.bio h2{
+    font-size: 2.5rem;
 }
 
 .job-1{
@@ -149,18 +153,18 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
-    margin-top: 1rem;
-
-    .boxing-1, .boxing-3, .boxing-2{
-      font-size: 1.75rem;
+    margin-top: 5rem;
+    // margin-top: 5rem;
+    .boxing-1, .boxing-3, .boxing-2{  
+        font-size: 1.1rem;
     }
    
 
     div{
         font-size: 1.8rem;
         border: 2px #fff solid;
-        padding: 1.5rem 2rem;
-        margin-bottom: 3rem;
+        padding: 1.5rem;
+        margin-bottom: 2.2rem;
         @include ease-in-0ut;
 
         &:hover{
@@ -200,6 +204,7 @@ main{
     background: darken($primary-color,10);
     color: set-text-color($primary-color);
     height: 50px;
+    width: 100%;
 }
 .centering{
    text-align: left;
