@@ -104,12 +104,19 @@ body {
   margin: 0;
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background-size: cover;
+  overflow: scroll; }
   body#bg-img {
     background: url(../img/bg.jpg);
-    background-attachment: fixed;
     background-size: cover;
-    background-position: center center; }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -ms-content-zooming: none; }
     body#bg-img::after {
       content: " ";
       position: absolute;
@@ -125,6 +132,8 @@ body {
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
+  h1.name, h2.name, h3.name {
+    word-wrap: break; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 4rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
@@ -255,6 +264,11 @@ main {
 .centering {
   text-align: left; }
 
+.osahon {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
@@ -318,7 +332,7 @@ main {
     margin: 0;
     font-weight: 400; }
     h1.lg-heading, h2.lg-heading, h3.lg-heading {
-      font-size: 4rem; }
+      font-size: 3rem; }
     h1.sm-heading, h2.sm-heading, h3.sm-heading {
       margin-left: -10px;
       margin-bottom: 2rem;
