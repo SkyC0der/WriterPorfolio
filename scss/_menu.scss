@@ -70,12 +70,13 @@
         &.show{
             // slide in from top
             transform: translate3d(0,0,0);
+            padding: 2px;
             }
     }
 
     &-branding{
         background: $primary-color;
-        transform: translate3d(0,100%,0);
+        transform: translate3d(0,-20%,0);
         @include ease-in-0ut;
 
         &.show{
@@ -84,8 +85,8 @@
         }
 
         .portrait{
-            width: 450px;
-            height: 450px;
+            width: 350px;
+            height: 350px;
             background: url('../img/profile.jpg');
             background-size: cover;
             border-radius: 50%;
@@ -121,6 +122,9 @@
     }
 }
 
+.nav.menu.show{
+   display: block;
+}
 
 // delay each by 0.1s
 @for $var from 1 through 4 {
